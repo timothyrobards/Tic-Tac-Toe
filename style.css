@@ -1,0 +1,66 @@
+
+body {
+  background: rgba(255,175,75,1);
+  background: -moz-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,175,75,1)), color-stop(100%, rgba(255,146,10,1)));
+  background: -webkit-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+  background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1 );
+    
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*
+h1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+h1 span {
+  display: block;
+  font-size: 2.2rem;
+}
+
+*/
+
+.board {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1.5px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+.cell.blue {
+  color: #1c4993;
+}
+.cell.red {
+  color: #e33840;
+}
+.cell:nth-of-type(2) {
+  border-left: none;
+  border-right: none;
+}
+.cell.center {
+  border-top: none;
+  border-bottom: none;
+}
